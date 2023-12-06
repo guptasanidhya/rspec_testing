@@ -51,3 +51,38 @@ Started GET "/status" for 127.0.0.1 at 2023-12-06 19:30:57 +0530
 Processing by StatusController#index as HTML
 Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1135)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/status" for 127.0.0.1 at 2023-12-06 19:50:47 +0530
+Processing by StatusController#index as HTML
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/status" for 127.0.0.1 at 2023-12-06 19:52:11 +0530
+Processing by StatusController#index as HTML
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/status" for 127.0.0.1 at 2023-12-06 20:01:43 +0530
+Processing by StatusController#index as HTML
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1136)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/consoles" for 127.0.0.1 at 2023-12-06 20:12:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/consoles"):
+  
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/consoles" for 127.0.0.1 at 2023-12-06 20:16:16 +0530
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/consoles" for 127.0.0.1 at 2023-12-06 20:16:46 +0530
+Processing by ConsolesController#index as HTML
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
