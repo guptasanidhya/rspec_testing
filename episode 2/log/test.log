@@ -208,3 +208,20 @@ Processing by ConsolesController#index as HTML
   Parameters: {"manufacturer"=>"Nintendo"}
 Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 114)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/consoles" for 127.0.0.1 at 2023-12-06 21:23:22 +0530
+Processing by ConsolesController#index as HTML
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1195)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/consoles" for 127.0.0.1 at 2023-12-06 21:23:22 +0530
+Processing by ConsolesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 117)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/consoles?manufacturer=Nintendo" for 127.0.0.1 at 2023-12-06 21:23:22 +0530
+Processing by ConsolesController#index as HTML
+  Parameters: {"manufacturer"=>"Nintendo"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 114)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
