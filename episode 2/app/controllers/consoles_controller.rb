@@ -22,6 +22,14 @@ class ConsolesController <ApplicationController
             {name:'PS1', manufacturer: 'Sony'},
             {name:'PS2', manufacturer: 'Sony'}     
         ]
+
+        if params[:manufacturer].present?
+            consoles=consoles.select do |console|
+                console[:manufacturer]==params[:manufacturer]
+            end
+        end
+        
+
         render(json: {'consoles'=> consoles.map {|console| console[:name]}})
     end
 end

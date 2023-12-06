@@ -25,5 +25,16 @@ RSpec.describe 'Consoles requests' do
                 'PS2'
             )
         end
+
+        it 'supports specifying consoles for a specific manufacturer' do
+            get('/consoles', params: { manufacturer: 'Nintendo'})
+            json =JSON.parse(response.body)
+            expect(json['consoles']).to contain_exactly(
+                'NES',
+                'SNES',
+                'Wii',
+                'Switch'
+            )
+        end
     end
 end
